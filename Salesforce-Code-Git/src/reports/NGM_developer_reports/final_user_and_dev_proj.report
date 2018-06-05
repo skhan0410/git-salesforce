@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>User$Name</field>
+    </columns>
+    <columns>
+        <field>User.Developer_Project__c$CreatedById$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>User.Developer_Project__c$CreatedById$Builder__c</column>
+            <operator>equals</operator>
+            <value>SUHAIL KHAN</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Developer_Project__c$CreatedById$Project_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>User.Developer_Project__c$CreatedById$Builder__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>final user and dev proj</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>user_report_type__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <timeFrameFilter>
+        <dateColumn>User$ChatterAdoptionStageModifiedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>
